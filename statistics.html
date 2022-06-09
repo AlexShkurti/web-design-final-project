@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="assets/css/shared.css" />
+    <link rel="stylesheet" href="assets/css/statistics.css" />
+  </head>
+  <body>
+    <nav>
+      <div class="title">Covid App</div>
+      <div class="links">
+        <a href="home.html">Home</a>
+        <a class="active" href="statistics.html">Statistics</a>
+        <a class="logout" href="login.html">Logout</a>
+      </div>
+      <div class="hamburger">
+        <span class="line"></span>
+        <span class="line"></span>
+        <span class="line"></span>
+      </div>
+    </nav>
+    <div class="backdrop"></div>
+    <div class="side-nav">
+      <div class="close">
+        <span></span>
+        <span></span>
+      </div>
+      <div class="side-nav--links">
+        <a href="./home.html">Home</a>
+        <a class="active" href="./statistics.html">Statistics</a>
+        <a href="./login.html" class="logout"></a>
+      </div>
+    </div>
+    <main>
+      <canvas id="myChart" style="width: 100%; max-width: 700px"></canvas>
+      <iframe
+        width="560"
+        height="315"
+        src="https://www.youtube.com/embed/NMre6IAAAiU"
+        title="YouTube video player"
+        frameborder="0"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+        allowfullscreen
+      ></iframe>
+    </main>
+    <script
+      src="https://code.jquery.com/jquery-3.6.0.slim.min.js"
+      integrity="sha256-u7e5khyithlIdTpu22PHhENmPcRdFiHRjhAuHcs05RI="
+      crossorigin="anonymous"
+    ></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.4/Chart.js"></script>
+    <script src="assets/js/shared.js"></script>
+    <script src="assets/js/statistics.js"></script>
+    <noscript
+      ><style>
+        html {
+          display: flex;
+          width: 100vw;
+          height: 100vh;
+          align-items: center;
+          justify-content: center;
+        }
+
+        section,
+        nav,
+        .side-nav,
+        .form-container {
+          display: none;
+        }
+
+        .no-js {
+          padding: 20px;
+          font-size: 2rem;
+          background-color: rgb(93, 122, 122);
+        }
+      </style>
+      <div class="no js">Enable Javascript!!!!</div>
+    </noscript>
+  </body>
+</html>
